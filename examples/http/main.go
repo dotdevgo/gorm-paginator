@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"net/http"
 
+	paginator "github.com/dotdevgo/gorm-paginator"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	paginator "github.com/martinohmann/gorm-paginator"
 )
 
 type model struct {

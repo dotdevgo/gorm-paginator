@@ -3,8 +3,8 @@ gorm-paginator
 
 [![Build Status](https://travis-ci.org/martinohmann/gorm-paginator.svg)](https://travis-ci.org/martinohmann/gorm-paginator)
 [![codecov](https://codecov.io/gh/martinohmann/gorm-paginator/branch/master/graph/badge.svg)](https://codecov.io/gh/martinohmann/gorm-paginator)
-[![Go Report Card](https://goreportcard.com/badge/github.com/martinohmann/gorm-paginator)](https://goreportcard.com/report/github.com/martinohmann/gorm-paginator)
-[![GoDoc](https://godoc.org/github.com/martinohmann/gorm-paginator?status.svg)](https://godoc.org/github.com/martinohmann/gorm-paginator)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dotdevgo/gorm-paginator)](https://goreportcard.com/report/github.com/dotdevgo/gorm-paginator)
+[![GoDoc](https://godoc.org/github.com/dotdevgo/gorm-paginator?status.svg)](https://godoc.org/github.com/dotdevgo/gorm-paginator)
 
 A simple paginator for [gorm](https://github.com/jinzhu/gorm). Also supports direct pagination via http.Request query parameters.
 
@@ -12,7 +12,7 @@ Installation
 ------------
 
 ```sh
-go get -u github.com/martinohmann/gorm-paginator
+go get -u github.com/dotdevgo/gorm-paginator
 ```
 
 Usage
@@ -28,7 +28,7 @@ import (
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	paginator "github.com/martinohmann/gorm-paginator"
+	paginator "github.com/dotdevgo/gorm-paginator"
 )
 
 type model struct {
@@ -80,7 +80,7 @@ import (
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	paginator "github.com/martinohmann/gorm-paginator"
+	paginator "github.com/dotdevgo/gorm-paginator"
 )
 
 type model struct {

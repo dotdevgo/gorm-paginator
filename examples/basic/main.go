@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/jinzhu/gorm"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
-	paginator "github.com/martinohmann/gorm-paginator"
+	paginator "github.com/dotdevgo/gorm-paginator"
+	// _ "github.com/jinzhu/gorm/dialects/mysql"
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
 )
 
 type model struct {
@@ -14,7 +15,7 @@ type model struct {
 }
 
 func main() {
-	db, err := gorm.Open("mysql", "root:root@tcp(mysql)/db?parseTime=true")
+	db, err := gorm.Open(mysql.Open("root:root@tcp(mysql)/db?parseTime=true"), &gorm.Config{})
 	if err != nil {
 		panic(err)
 	}

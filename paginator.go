@@ -3,7 +3,7 @@
 package paginator
 
 import (
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 )
 
 // DefaultLimit defines the default limit for paginated queries. This is a
@@ -27,7 +27,7 @@ type paginator struct {
 
 // countResult defines the result of the count query executed by the paginator.
 type countResult struct {
-	total int
+	total int64
 	err   error
 }
 
@@ -36,7 +36,7 @@ type Result struct {
 	CurrentPage    int         `json:"currentPage"`
 	MaxPage        int         `json:"maxPage"`
 	RecordsPerPage int         `json:"recordsPerPage"`
-	TotalRecords   int         `json:"totalRecords"`
+	TotalRecords   int64       `json:"totalRecords"`
 	Records        interface{} `json:"records"`
 }
 
